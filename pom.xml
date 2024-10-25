@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bordier</groupId>
 	<artifactId>sp3-aws-sample</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>sp3-aws-sample</name>
 	<description>sp3-aws-sample</description>
 	<url/>
