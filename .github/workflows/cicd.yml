@@ -32,9 +32,9 @@ jobs:
     runs-on: [aws-ec2]
     steps:
       - name: Update OS
-        run: apt-get update
+        run: sudo apt-get update
       - name: Install docker
-        run: apt-get install -y docker.io
+        run: sudo apt-get install -y docker.io
       - name: Pull image for docker hub
         run: docker pull gastonbordier/sp3-aws-sample:latest
       - name: Delete old container
