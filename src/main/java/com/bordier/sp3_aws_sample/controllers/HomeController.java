@@ -13,6 +13,6 @@ public class HomeController {
 
     @GetMapping
     public ResponseEntity<?> get() {
-        return ResponseEntity.ok(Collections.singletonMap("api", "prueba"));
+        return ResponseEntity.ok(Collections.singletonMap("api", "hijo e putaaaaaaaaaa"));
     }
 }

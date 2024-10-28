@@ -31,9 +31,11 @@ jobs:
     needs: build
     runs-on: [self-hosted]
     steps:
+      - name: Install docker
+        run: sudo snap install docker
       - name: Pull image for docker hub
-        run: docker pull gastonbordier/sp3-aws-sample:latest
+        run: sudo docker pull gastonbordier/sp3-aws-sample:latest
       - name: Delete old container
-        run: docker rm -f sp3-aws-sample-container
+        run: sudo docker rm -f sp3-aws-sample-container
       - name: Run docker container
-        run: docker run -d -p 8080:8080 --name sp3-aws-sample-container gastonbordier/sp3-aws-sample
+        run: sudo docker run -d -p 8080:8080 --name sp3-aws-sample-container gastonbordier/sp3-aws-sample
